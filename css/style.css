@@ -1,0 +1,94 @@
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, Verdana;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #6610f2;
+    font: font-style font-variant font-weight font-size font-family;
+    font: small-caps bold 16px Tahoma, Arial, Verdana;
+}
+
+.product {
+    font-family: Tahoma, Arial, Verdana;
+}
+
+.product h1 {
+    color: black;
+    font-variant: small-caps;
+}
+
+.product h2 {
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    font-variant: small-caps;
+}
+
+.product h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    font-variant: small-caps;
+}
+
+.brief {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.detail {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.feature li {
+    font-family: fantasy;
+    font-size: 16px;
+    list-style-image: url(../catalog/img/list.png);
+}
+
+.contacts input[type="text"] {
+    border: 1px solid #cccccc;
+    height: 18px;
+    width: 150px;
+    color: #6610f2;
+    font-size: 18px;
+    font-family: Tahoma !important;
+}
+.contacts input[type="email"] {
+    border: 1px solid #cccccc;
+    height: 18px;
+    width: 150px;
+    color: #6610f2;
+    font-size: 18px;
+    font-family: Tahoma !important;
+}
+.contacts{
+    font-family: Tahoma, Arial, Verdana;
+}
+.preview{
+    border: 7px outset grey;
+} 
+.catalog{
+    font-family: Tahoma, Arial, Verdana;
+}
+.catalog a p{
+    border: 1px dotted grey;
+}
+.catalog a p{
+    font-family: Tahoma, Arial, Verdana;
+    text-align: center;
+    width: 400px;
+}
