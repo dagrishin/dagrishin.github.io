@@ -3,13 +3,12 @@ body {
     font-family: Arial, Verdana;
 }
 
-.menu li {
+.menu__list {
     list-style-type: none;
 }
 
-.menu li a {
+.menu__link {
     color: #6610f2;
-    font: font-style font-variant font-weight font-size font-family;
     font: small-caps bold 16px Tahoma, Arial, Verdana;
 }
 
@@ -67,6 +66,7 @@ body {
     font-size: 18px;
     font-family: Tahoma !important;
 }
+
 .contacts input[type="email"] {
     border: 1px solid #cccccc;
     height: 18px;
@@ -75,20 +75,32 @@ body {
     font-size: 18px;
     font-family: Tahoma !important;
 }
-.contacts{
+
+.contacts {
     font-family: Tahoma, Arial, Verdana;
 }
-.preview{
+
+.preview {
     border: 7px outset grey;
-} 
-.catalog{
+}
+
+.catalog {
     font-family: Tahoma, Arial, Verdana;
 }
-.catalog a p{
+
+.catalog a p {
     border: 1px dotted grey;
 }
-.catalog a p{
+
+.catalog a p {
     font-family: Tahoma, Arial, Verdana;
     text-align: center;
     width: 400px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
 }
