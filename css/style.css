@@ -8,8 +8,34 @@ body {
 }
 
 .menu__link {
-    color: #6610f2;
+    color: #483dbf;
     font: small-caps bold 16px Tahoma, Arial, Verdana;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: #8b2496;
+    text-decoration: underline;
+}
+
+.menu__link:hover::after {
+    content: " >>";
+    font-size: 12px;
+
+}
+
+.logo {
+    width: 200px;
+    border: 2px outset grey;
+    border-radius: 80px;
+    padding: 5px;
+}
+
+.logo:hover {
+    width: 210px;
+    padding: 0px;
+    border-color: #8b2496;
+
 }
 
 .product {
@@ -35,6 +61,11 @@ body {
     font-weight: 400;
     background-color: #eaeaea;
     font-variant: small-caps;
+}
+
+.product p:first-letter {
+    font-size: 30px;
+    font-family: monospace;
 }
 
 .brief {
@@ -67,6 +98,10 @@ body {
     font-family: Tahoma !important;
 }
 
+.contacts [type="text"] {
+    text-transform: capitalize;
+}
+
 .contacts input[type="email"] {
     border: 1px solid #cccccc;
     height: 18px;
@@ -76,12 +111,27 @@ body {
     font-family: Tahoma !important;
 }
 
+.contacts input[type="email"]:focus {
+
+    color: white;
+    font-size: 18px;
+    font-family: Tahoma !important;
+    background: black;
+}
+
 .contacts {
     font-family: Tahoma, Arial, Verdana;
 }
 
 .preview {
     border: 7px outset grey;
+    width: 400px;
+}
+
+.preview:hover {
+    border: none;
+    width: 400px;
+    padding: 7px;
 }
 
 .catalog {
@@ -103,4 +153,25 @@ button[type="reset"] {
     width: 150px;
     height: 40px;
     font-size: 16px;
+}
+
+.feature_table {
+    border-collapse: collapse;
+    border: 3px solid grey;
+    text-align: center;
+}
+
+.feature_table th,
+td {
+    border: 1px solid grey;
+    padding: 15px;
+}
+
+.bonus_cards {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bonus_cards tr:first-child {
+    height: 70px;
 }
