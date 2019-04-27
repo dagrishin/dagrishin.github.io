@@ -3,38 +3,84 @@ body {
     font-family: Arial, Verdana;
 }
 
+
+.container {
+    margin: 0 auto;
+    width: 800px
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+
+.footer {
+    border-top: 1px solid black;
+    height: 20px;
+    background: #dcdcdc;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.menu {
+    display: flex;
+    border: 2px outset grey;
+    border-radius: 20px;
+    align-items: center;
+    height: 40px;
+
+}
+
+.logo img {
+    width: 100px;
+    border: 2px outset grey;
+    border-radius: 80px;
+    padding: 5px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img:hover {
+    width: 110px;
+    padding: 0px;
+    border-color: #8b2496;
+
+}
+
 .menu__list {
-    list-style-type: none;
+    width: 120px;
+    height: 17px;
+    text-align: center;
+    border-left: 1px solid black;
+
+}
+
+.menu__lisr:last-child {
+    border-left: 0px solid black;
 }
 
 .menu__link {
     color: #483dbf;
     font: small-caps bold 16px Tahoma, Arial, Verdana;
     text-decoration: none;
+
 }
 
 .menu__link:hover {
     color: #8b2496;
     text-decoration: underline;
+
 }
 
 .menu__link:hover::after {
     content: " >>";
     font-size: 12px;
-
-}
-
-.logo {
-    width: 200px;
-    border: 2px outset grey;
-    border-radius: 80px;
-    padding: 5px;
-}
-
-.logo:hover {
-    width: 210px;
-    padding: 0px;
-    border-color: #8b2496;
 
 }
 
@@ -73,6 +119,11 @@ body {
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
+
+}
+
+.brief h3 {
+    overflow: hidden;
 }
 
 .detail {
@@ -126,6 +177,8 @@ body {
 .preview {
     border: 7px outset grey;
     width: 400px;
+    float: left;
+    margin-right: 10px;
 }
 
 .preview:hover {
@@ -134,18 +187,40 @@ body {
     padding: 7px;
 }
 
+.detailed_description {
+    clear: both;
+}
+
+/* Страница каталога товара */
 .catalog {
     font-family: Tahoma, Arial, Verdana;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.catalog a p {
-    border: 1px dotted grey;
+.catalog_produckt {
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+    padding: 2px;
+    margin-bottom: 10px;
 }
 
-.catalog a p {
+.catalog_produckt:hover {
+    border: 3px solid #8276f5;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+.catalog_produckt a p {
     font-family: Tahoma, Arial, Verdana;
     text-align: center;
-    width: 400px;
+    width: 250px;
+}
+
+.catalog_produckt img {
+    width: 250px;
 }
 
 button[type="submit"],
@@ -174,4 +249,34 @@ td {
 
 .bonus_cards tr:first-child {
     height: 70px;
+}
+
+.map {
+    width: auto;
+    padding: 10px;
+}
+
+/* Кнопка купить */
+.button_buy {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    padding: 10px 30px 10px 30px;
+    border-radius: 3px;
+    background: #636cf9;
+    font-size: 18px;
+    
+}
+
+.button_buy:hover {
+    background: #505bf3;
+}
+
+.button_buy:active {
+    background: #0a1aef;
+}
+.buy{
+    padding-top: 10px;
+    
 }
