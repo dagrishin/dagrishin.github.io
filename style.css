@@ -526,6 +526,7 @@ a {
 .fotter-information-colum-links {
     display: flex;
     flex-direction: column;
+    list-style-type: none;
 }
 
 .fotter-h3 {
@@ -563,7 +564,7 @@ a {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    
 }
 
 .suscribe-input {
@@ -909,4 +910,8 @@ a {
     height: 100%;
     width: 1366px;
     margin: 0 auto;
+}
+
+.fotter-information-colum-list {
+    margin-bottom: 10px;
 }
