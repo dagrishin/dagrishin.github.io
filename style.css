@@ -90,7 +90,7 @@ a {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 16px 31px;
+    padding: 10px 31px;
     letter-spacing: 3px;
     display: inline-flex;
 
@@ -145,6 +145,8 @@ a {
 .feture-product__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .fetured-product__navigation {
@@ -162,7 +164,6 @@ a {
 }
 
 .fetured-product {
-    height: 369px;
     margin-bottom: 120px;
     display: flex;
     flex-direction: column;
@@ -197,6 +198,10 @@ a {
     text-transform: uppercase;
     letter-spacing: 3px;
     display: inline-flex;
+}
+
+.explore__all:hover {
+    opacity: 0.6;
 }
 
 .feture-product__product {
@@ -564,18 +569,19 @@ a {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    
+
 }
 
 .suscribe-input {
     border: 1px solid #d9dee1;
     background-color: #ffffff;
-    width: 320px;
+    width: 273px;
     height: 48px;
     color: #6c6c6c;
     font-size: 14px;
     font-weight: 300;
     padding-left: 20px;
+    padding-right: 30px;
 }
 
 .suscribe-input-div {
